@@ -1,0 +1,17 @@
+The Implementation projects will be evaluated based on significance, design, correctness, documentation, and appropriate evaluation/testing. You will need to electronically submit a compressed file containing your project distribution files and documentation. 
+
+Report
+Your project documentation should contain the following components: 
+A detailed description of your system (including specific techniques and algorithms you used), 
+and the interaction between the components (make references to code segments, modules, methods, functions, etc. as necessary). 
+
+Your write up should also include an evaluation of your system demonstrating its correctness and functionality. If you used any outside sources in your implementation, please clearly indicate which sources, and how and where they were used. Complete (actual) sample runs of your program with description, illustrating how your system works, along with any intermediate input or output used for the sample run. 
+
+Distribution
+Your project distribution files should contain the following: 
+• Complete source code (be sure that your source code is fully documented and easy to read). 
+• Binary files (e.g., executables, DLLs, Class files) or other components necessary to run your program. 
+• Readme file containing instructions on how to compile, install, and/or run your program. 
+• Project report/documentation, as described above. • Any test data used for evaluation of your system. 
+• If your application is CGI-based or otherwise has a server component, please provide a URL for a demo version of your system. 
+
