@@ -1,0 +1,41 @@
+<div id="recDiv">
+<h5>Class you might be insterested.</h5>
+<hr/>
+<div class="row">
+    {% for c in courses %}
+    <div class="col s3">
+         <div class="card-panel orange hoverable">
+             <a target="_blank" href="{{c['url']}}">
+             <span class="white-text">{{c['id']}} : {{c['title']}}</span>
+             <p class="white-text">{{c['desc'][:80]}}...</p>
+             </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% if teachers|length > 0 %}
+<h5>Not interested? Change your profile and click "Recommend" button again!</h5>
+{% endif %}
+<hr/><br/>
+
+<h5>Instructors you might be insterested.</h5>
+<hr/>
+<div class="row">
+    {% for t in teachers %}
+    <div class="col s3">
+        <div class="card-panel blue-grey lighten-2 hoverable">
+            <a target="_blank" href="{{t['url']}}">
+                <span class="white-text">{{t['name']}}</span>
+                <p class="white-text">{{t['title']}}</p>
+                <p class="white-text">{{t['dept']}}</p>
+                <img class="responsive-img" src="{{t['imgurl']}}">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% if teachers|length > 0 %}
+    <h5>Not interested? Change your profile and click "Recommend" button again!</h5>
+{% endif %}
+<hr/><br/>
+</div>

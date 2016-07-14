@@ -1,0 +1,24 @@
+<div class="col s9">
+    <h5>Concentration & Interest</h5>
+        <form action="#">
+            {% if tags|length < 1 %}
+              <h5 class="green-text"> Please choose your major and level first.</h5>
+            {% endif %}
+
+            {% for t in tags %}
+            <p>
+                <input class="filled-in conCheckbox" type="checkbox" id="{{t}}"/>
+                <label for="{{t}}">{{t}}</label>
+            </p>
+            {% endfor %}
+        </form>
+</div>
+
+{% if tags|length > 0 %}
+<br/><br/>
+<div class="row">
+    <div class="col s6 offset-s5">
+        <a id="recBtn" class="waves-effect waves-light blue btn">Recommend</a>
+    </div>
+</div>
+{% endif %}
